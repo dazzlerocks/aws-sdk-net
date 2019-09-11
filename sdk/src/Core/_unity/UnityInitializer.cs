@@ -105,7 +105,7 @@ namespace Amazon
                     if (this != _instance)
                     {
                         //destroy the new instance
-                        DestroyObject(this);
+                        Destroy(this);
                     }
                 }
 

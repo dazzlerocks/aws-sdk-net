@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,8 @@
     <OutputType>Library</OutputType>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <AssemblyName>AWSSDK.CognitoSync</AssemblyName>
     <RootNamespace>Amazon.CognitoSync</RootNamespace>
     <BaseIntermediateOutputPath>obj\unity</BaseIntermediateOutputPath>
@@ -62,10 +63,6 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-    <!-- create the path of reference UnityEngine for Unity projects  -->
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data">
@@ -73,8 +70,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Data.SQLite">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\Mono.Data.SQLite.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.2.4f1\Editor\Data\Mono\lib\mono\unity\Mono.Data.Sqlite.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.2.4f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -134,14 +134,14 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CognitoIdentity\AWSSDK.CognitoIdentity.Unity.csproj">
-        <Project>{982D5D96-8C94-4690-8027-C42B73A15209}</Project>
-        <Name>AWSSDK.CognitoIdentity.Unity</Name>
+      <Project>{982D5D96-8C94-4690-8027-C42B73A15209}</Project>
+      <Name>AWSSDK.CognitoIdentity.Unity</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\AWSSDK.Core.Unity.csproj">
-        <Project>{5A8B25C1-3D58-4BB6-BF7D-77AD818D9EAD}</Project>
-        <Name>AWSSDK.Core.Unity</Name>
+      <Project>{5A8B25C1-3D58-4BB6-BF7D-77AD818D9EAD}</Project>
+      <Name>AWSSDK.Core.Unity</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
